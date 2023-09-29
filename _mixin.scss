@@ -41,3 +41,14 @@
     margin-top: $mt;
     margin-bottom: $mb;
 }
+
+@mixin readmore($color) {
+        font-family: $primary-font;
+        font-size: $peragraph-size;
+        font-weight: 400;
+        color: $color;
+        right: 5px;
+        i{
+            padding-left: 10px;
+        }
+    }

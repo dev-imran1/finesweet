@@ -12,14 +12,7 @@
                 @include peragraph(#282938,405px,0,16px);
             }
             a{
-                font-family: $primary-font;
-                font-size: $peragraph-size;
-                font-weight: 400;
-                color:#2405F2;
-                right: 5px;
-                i{
-                    padding-left: 10px;
-                }
+                @include readmore(#2405F2);
         }
     }
     .work__right{
