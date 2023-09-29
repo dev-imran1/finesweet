@@ -1,0 +1,32 @@
+@mixin btn($color,$background,$mt,$mb){
+    font-size: $peragraph-size;
+    font-family: $primary-font;
+    font-weight: 500;
+    padding: 16px 48px;
+    color: $color;
+    background-color:$background;
+    outline: 2px solid #fff;
+    display: inline-block;
+    border-radius: 41px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    margin-top: $mt;
+    margin-bottom: $mb;
+    &:hover{
+        background-color: $btn-color;
+        outline: none;
+        color: $font-color;
+    }
+}
+
+@mixin peragraph($color, $width,$mt,$mb){
+    font-family: $primary-font;
+    font-size: $peragraph-size;
+    color: $color;
+    width: $width;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}

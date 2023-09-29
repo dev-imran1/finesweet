@@ -1,0 +1,29 @@
+#banner{
+    padding: 128px 0;
+    background-color: $background_color;
+    .banner__wrapper{
+        display: flex;
+        column-gap: 82px;
+        .banner__left{
+            h1{
+                width: 582px;
+                font-size: $heading-size;
+                color: #fff;
+                font-weight: 700;
+                font-family: $primary-font;
+                line-height: 74px;
+            }
+            p{
+                @include peragraph(#fff, 562px,24px,48px); 
+            }
+            .banner__btn{
+                display: flex;
+                align-items: center;
+                column-gap: 40px;
+                a{
+                    @include btn(#fff, $background_color,0,0);
+                }
+            }
+        }
+    }
+}
