@@ -30,3 +30,14 @@
     margin-top: $mt;
     margin-bottom: $mb;
 }
+
+@mixin sub_heading ($width, $mt, $mb){
+    font-size: $heading-size;
+    color: $font-color;
+    font-weight: 600;
+    font-family: $primary-font;
+    line-height: 64px;
+    width: $width;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}

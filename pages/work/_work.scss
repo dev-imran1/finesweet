@@ -1,0 +1,76 @@
+#work{
+    padding: 128px 0;
+    background-color: #F4F6FC;
+    .work__wrapper{
+        display: flex;
+        column-gap: 142px;
+        .work__left{
+            h2{
+                @include sub_heading(null, null, 16px);
+            }
+            p{
+                @include peragraph(#282938,405px,0,16px);
+            }
+            a{
+                font-family: $primary-font;
+                font-size: $peragraph-size;
+                font-weight: 400;
+                color:#2405F2;
+                right: 5px;
+                i{
+                    padding-left: 10px;
+                }
+        }
+    }
+    .work__right{
+        display: flex;
+        width: 656px;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        .work__box{
+            width: 328px;
+            a{
+                padding: 9px 15px;
+                background-color:#5239FA;
+                color: #fff;
+                border-radius: 8px;
+                font-family: $primary-font;
+                font-size: 18px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    height: 64%;
+                    width: 7px;
+                    background-color: #FCD980;
+                    top: 13px;
+                    left: 0;
+                    border-radius: 8px;
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    height: 7px;
+                    width: 55%;
+                    background-color: #FCD980;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 8px;
+                }
+            }
+            h3{
+                font-family: $primary-font;
+                font-size: $sub-heading__title;
+                font-weight: 600;
+                color: $font-color;
+                margin-top: 35px;
+                margin-bottom: 20px;
+            }
+            p{
+                @include peragraph($pera-color,303px, 10px, 0);
+            }
+        }
+    }
+}
+}

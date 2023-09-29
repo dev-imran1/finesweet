@@ -7,9 +7,9 @@
         .banner__left{
             h1{
                 width: 582px;
-                font-size: $heading-size;
+                font-size: 54px;
                 color: #fff;
-                font-weight: 700;
+                font-weight: 600;
                 font-family: $primary-font;
                 line-height: 74px;
             }
@@ -23,6 +23,13 @@
                 a{
                     @include btn(#fff, $background_color,0,0);
                 }
+            }
+        }
+        .banner__right{
+            picture img{
+                width: 638px;
+                height: 361px;
+                object-fit: cover;
             }
         }
     }
