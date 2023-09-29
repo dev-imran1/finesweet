@@ -5,6 +5,7 @@
         display: flex;
         column-gap: 82px;
         .banner__left{
+            width: 50%;
             h1{
                 width: 582px;
                 font-size: 54px;
@@ -17,15 +18,19 @@
                 @include peragraph(#fff, 562px,24px,48px); 
             }
             .banner__btn{
+                column-gap: 40px;
                 display: flex;
                 align-items: center;
-                column-gap: 40px;
-                a{
-                    @include btn(#fff, $background_color,0,0);
+                h6{
+                    @include btn(#fff, transparent,0,0);
+                }
+                h4{
+                   @include peragraph(#fff, null,0,0);
                 }
             }
         }
         .banner__right{
+            width: 50%;
             picture img{
                 width: 638px;
                 height: 361px;

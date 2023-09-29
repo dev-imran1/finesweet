@@ -76,6 +76,9 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   -moz-column-gap: 82px;
        column-gap: 82px;
 }
+#banner .banner__wrapper .banner__left {
+  width: 50%;
+}
 #banner .banner__wrapper .banner__left h1 {
   width: 582px;
   font-size: 54px;
@@ -96,18 +99,18 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   margin-bottom: 48px;
 }
 #banner .banner__wrapper .banner__left .banner__btn {
-  display: flex;
-  align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  display: flex;
+  align-items: center;
 }
-#banner .banner__wrapper .banner__left .banner__btn a {
+#banner .banner__wrapper .banner__left .banner__btn h6 {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   padding: 16px 48px;
   color: #fff;
-  background-color: #1C1E53;
+  background-color: transparent;
   outline: 2px solid #fff;
   display: inline-block;
   border-radius: 41px;
@@ -116,10 +119,23 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
-#banner .banner__wrapper .banner__left .banner__btn a:hover {
+#banner .banner__wrapper .banner__left .banner__btn h6:hover {
   background-color: #FCD980;
   outline: none;
   color: #282938;
+}
+#banner .banner__wrapper .banner__left .banner__btn h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#banner .banner__wrapper .banner__right {
+  width: 50%;
 }
 #banner .banner__wrapper .banner__right picture img {
   width: 638px;
