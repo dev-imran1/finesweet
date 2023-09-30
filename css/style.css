@@ -276,19 +276,23 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   width: 843px;
   height: 600px;
   position: relative;
+  overflow: hidden;
 }
 #project .project__wrapper .project__left img {
-  z-index: -1;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 #project .project__wrapper .project__left .overlay {
-  width: 0;
+  width: 360px;
   height: 100%;
   background-color: rgb(28, 30, 83);
   opacity: 0.7;
   top: 0;
+  left: -396px;
   position: absolute;
+  z-index: 555;
   text-align: center;
   transition: all linear 0.3s;
   padding: 312px 35px 48px 35px;
@@ -322,8 +326,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
 #project .project__wrapper .project__left .overlay a i {
   padding-left: 10px;
 }
-#project .project__wrapper .project__left .overlay:hover {
-  width: 50%;
+#project .project__wrapper .project__left:hover .overlay {
+  left: 0;
 }
 #project .project__wrapper .project__right {
   width: 405px;
@@ -334,21 +338,49 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   height: 285px;
   margin-bottom: 32px;
   position: relative;
+  overflow: hidden;
 }
-#project .project__wrapper .project__right .project__right-top::after {
-  content: "";
-  width: 1000%;
+#project .project__wrapper .project__right .project__right-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#project .project__wrapper .project__right .project__right-top .overlay__right {
+  width: 100%;
   height: 100%;
   background-color: rgb(28, 30, 83);
   opacity: 0.7;
-  position: absolute;
   top: 0;
-  left: 0;
-  visibility: hidden;
+  bottom: -285px;
+  position: absolute;
+  z-index: 555;
+  text-align: center;
   transition: all linear 0.3s;
+  padding: 129px 35px 48px 35px;
+  opacity: 0;
 }
-#project .project__wrapper .project__right .project__right-top:hover::after {
-  visibility: visible;
+#project .project__wrapper .project__right .project__right-top .overlay__right h3 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  width: 313px;
+  line-height: 38px;
+  text-align: center;
+}
+#project .project__wrapper .project__right .project__right-top .overlay__right a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FCD980;
+  right: 5px;
+}
+#project .project__wrapper .project__right .project__right-top .overlay__right a i {
+  padding-left: 10px;
+}
+#project .project__wrapper .project__right .project__right-top:hover .overlay__right {
+  opacity: 0.7;
 }
 
 #service {

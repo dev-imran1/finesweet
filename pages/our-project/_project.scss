@@ -23,22 +23,24 @@
             width: 843px;
             height: 600px;
             position: relative;
+            overflow: hidden;
             img{
-                z-index: -1;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
-
-                .overlay{
-                    width:0;
-                    height: 100%;
-                    background-color: rgb(28, 30, 83);
-                    opacity: 0.7;
-                    top: 0;
-                    position: absolute;
-                    text-align: center;
-                    transition: all linear 0.3s;
-                    padding: 312px 35px 48px 35px;
-                    // visibility: hidden;
+            .overlay{
+                width:360px;
+                height: 100%;
+                background-color: rgb(28, 30, 83);
+                opacity: 0.7;
+                top: 0;
+                left: -396px;
+                position: absolute;
+                z-index: 555;
+                text-align: center;
+                transition: all linear 0.3s;
+                padding: 312px 35px 48px 35px;
                     h3{
                        font-size: $font-24;
                        font-family: $primary-font;
@@ -53,10 +55,9 @@
                     a{
                         @include readmore($btn-color);
                     }
-                    &:hover{
-                        width: 50%;
-                        // visibility: visible;
-                    }
+                }
+                &:hover .overlay{
+                    left: 0;
                 }
         }
 
@@ -68,20 +69,41 @@
                 height: 285px;
                 margin-bottom: 32px;
                 position: relative;
-                &::after{
-                    content: "";
-                    width: 1000%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay__right{
+                    width:100%;
                     height: 100%;
                     background-color: rgb(28, 30, 83);
                     opacity: 0.7;
-                    position: absolute;
                     top: 0;
-                    left: 0;
-                    visibility: hidden;
+                    bottom: -285px;
+                    position: absolute;
+                    z-index: 555;
+                    text-align: center;
                     transition: all linear 0.3s;
+                    padding: 129px 35px 48px 35px;
+                    opacity: 0;
+
+                    h3{
+                        font-size: $font-24;
+                        font-family: $primary-font;
+                        color: #fff;
+                        font-weight: 600;
+                        width: 313px;
+                        line-height: 38px;
+                        text-align: center;
+                    }
+                    a{
+                        @include readmore($btn-color)
+                    }
                 }
-                &:hover::after{
-                    visibility: visible;
+                &:hover .overlay__right{
+                    opacity: 0.7;
                 }
             }
         }
