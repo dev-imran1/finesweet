@@ -1,0 +1,96 @@
+#footer{
+    padding-top:100px;
+    padding-right: 22px;
+    background-color: $background_color;
+    .footer__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .footer__left{
+            width: 50%;
+            p{
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                width: 399px;
+                opacity: 0.7;
+                padding-top: 22px;
+                margin-bottom:86px;
+            }
+            .footer__contact{
+                display: flex;
+                justify-content: space-between;
+                background-color: $btn-color;
+                width: 517px;
+                column-gap: 28px;
+                padding: 18px 100px 18px 37px;
+                .footer__contact-left{
+                    h6{
+                        color: #282938;
+                        font-family: $primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 32px;
+                    }
+                    h4{
+                        color: #282938;
+                        font-family: $primary-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .footer__right{
+            width: 50%;
+            h3{
+                color: #FFF;
+                font-family: $primary-font;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 64px;
+            }
+            p{
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                width: 399px;
+                opacity: 0.7;
+                padding-top: 22px;
+                padding-bottom:48px;
+            }
+            .footer__icon{
+                display: flex;
+                column-gap: 26px;
+                .facebook{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background-color: $btn-color;
+                    position: relative;
+                    border: 1px solid $btn-color;
+                    transition: all linear 0.3s;
+                    i{
+                        position: absolute;
+                        top: 21%;
+                        left: 28%;
+                    }
+                    &:hover{
+                        background-color: transparent;
+                        color: #ffff;
+                    }
+                } 
+            }
+        }
+    }
+}
