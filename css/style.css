@@ -478,4 +478,100 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-size: 12px;
   color: #282938;
   margin-bottom: 5px;
+}
+
+#question {
+  padding: 128px 0;
+  background-color: #ECECF1;
+}
+#question .question__wrapper {
+  display: flex;
+}
+#question .question__wrapper .question__left {
+  width: 328px;
+  padding-top: 35px;
+}
+#question .question__wrapper .question__left h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #282938;
+}
+#question .question__wrapper .question__left h6 {
+  color: #2405F2;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2405F2;
+  right: 5px;
+  margin-top: 16px;
+}
+#question .question__wrapper .question__right-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 846px;
+}
+#question .question__wrapper .question__right-wrapper .question__right {
+  width: 100%;
+  display: flex;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-number {
+  width: 10%;
+  padding-top: 35px;
+  margin-bottom: 48px;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-number h3 {
+  color: #2405F2;
+  text-align: center;
+  font-family: Popp "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content {
+  width: 80%;
+  padding-top: 28px;
+  position: relative;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content::after {
+  width: 114%;
+  height: 2px;
+  background-color: #c1c1c5;
+  position: absolute;
+  content: "";
+  left: -65px;
+  bottom: 0;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content:last-child {
+  content: none;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content h5 {
+  color: #282938;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #282938;
+  width: 624px;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-icon {
+  padding-top: 35px;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-icon i {
+  font-size: 30px;
+  transition: all linear 0.3s;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-icon i:hover {
+  color: red;
 }/*# sourceMappingURL=style.css.map */

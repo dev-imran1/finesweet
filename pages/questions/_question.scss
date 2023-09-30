@@ -1,0 +1,87 @@
+#question{
+    padding: 128px 0;
+    background-color: #ECECF1;
+    .question__wrapper{
+        display: flex;
+        .question__left{
+            width: 328px;
+            padding-top: 35px;
+            h3{
+                font-family: $primary-font;
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 56px;
+                color: $font-color;
+            }
+            h6{
+                color:#2405F2;
+                font-family: $primary-font;
+                font-size: $peragraph-size;
+                font-weight: 500;
+                color: #2405F2;
+                right: 5px;
+                margin-top: 16px;
+            }
+        }  
+        .question__right-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            width: 846px;
+            .question__right{
+                width: 100%;
+                display: flex;
+               .question__right-number{
+                width: 10%;
+                padding-top: 35px;
+                margin-bottom: 48px;
+                h3{
+                    color: #2405F2;
+                    text-align: center;
+                    font-family: Popp$primary-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                }
+               } 
+               .question__right-content{
+                width: 80%;
+                padding-top: 28px;
+                position: relative;
+                &::after{
+                    width: 114%;
+                    height: 2px;
+                    background-color: #c1c1c5;
+                    position: absolute;
+                    content: "";
+                    left: -65px;
+                    bottom: 0;
+                }
+                &:last-child{
+                    content: none;
+                }
+                h5{
+                    color:#282938;
+                    font-family: $primary-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 36px;
+                }
+                p{
+                    @include peragraph(#282938, 624px, 16px, 48px);
+                }
+               }
+               .question__right-icon{
+                padding-top: 35px;
+                i{
+                    font-size: 30px;
+                    transition: all linear 0.3s;
+                    &:hover{
+                        color: red;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
