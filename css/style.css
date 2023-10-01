@@ -104,7 +104,7 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   display: flex;
   align-items: center;
 }
-#banner .banner__wrapper .banner__left .banner__btn h6 {
+#banner .banner__wrapper .banner__left .banner__btn a {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -119,7 +119,7 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
-#banner .banner__wrapper .banner__left .banner__btn h6:hover {
+#banner .banner__wrapper .banner__left .banner__btn a:hover {
   background-color: #FCD980;
   outline: none;
   color: #282938;
@@ -127,12 +127,14 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
 #banner .banner__wrapper .banner__left .banner__btn h4 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #fff;
-  line-height: 28px;
   font-weight: 400;
-  opacity: 0.7;
-  margin-top: 0;
-  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.703);
+  right: 5px;
+  display: flex;
+  align-items: center;
+}
+#banner .banner__wrapper .banner__left .banner__btn h4 i {
+  padding-left: 10px;
 }
 #banner .banner__wrapper .banner__right {
   width: 50%;
@@ -178,6 +180,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-weight: 400;
   color: #2405F2;
   right: 5px;
+  display: flex;
+  align-items: center;
 }
 #work .work__wrapper .work__left a i {
   padding-left: 10px;
@@ -322,6 +326,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-weight: 400;
   color: #FCD980;
   right: 5px;
+  display: flex;
+  align-items: center;
 }
 #project .project__wrapper .project__left .overlay a i {
   padding-left: 10px;
@@ -375,6 +381,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-weight: 400;
   color: #FCD980;
   right: 5px;
+  display: flex;
+  align-items: center;
 }
 #project .project__wrapper .project__right .project__right-top .overlay__right a i {
   padding-left: 10px;
@@ -712,6 +720,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-weight: 400;
   color: white;
   right: 5px;
+  display: flex;
+  align-items: center;
 }
 #contact .contact__wrapper .contact__input h3 i {
   padding-left: 10px;
@@ -778,6 +788,8 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   font-weight: 400;
   color: #000;
   right: 5px;
+  display: flex;
+  align-items: center;
 }
 #blog .blog__wrapper .blog__box a i {
   padding-left: 10px;
@@ -878,4 +890,36 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
 #footer .footer__wrapper .footer__right .footer__icon .facebook:hover {
   background-color: transparent;
   color: white;
+}
+
+#copywrite {
+  padding: 32px 0;
+}
+#copywrite .copywrite__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#copywrite .copywrite__wrapper .copywrite__gmail h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282938;
+}
+#copywrite .copywrite__wrapper .copywrite__item ul {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+#copywrite .copywrite__wrapper .copywrite__item ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282938;
+}
+#copywrite .copywrite__wrapper .copywrite__item ul li a {
+  transition: all linear 0.3s;
+}
+#copywrite .copywrite__wrapper .copywrite__item ul li a:hover {
+  color: #000;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

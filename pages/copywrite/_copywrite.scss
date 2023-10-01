@@ -1,0 +1,34 @@
+#copywrite{
+    padding: 32px 0;
+    .copywrite__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .copywrite__gmail{
+            h5{
+                font-family: $primary-font;
+                font-size: 16px;
+                font-weight: 500;
+                color: $font-color;
+            }
+        }
+        .copywrite__item{
+            ul{
+                display: flex;
+                column-gap: 32px;
+                li{
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $font-color;
+                    a{
+                        transition: all linear 0.3s;
+                        &:hover{
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

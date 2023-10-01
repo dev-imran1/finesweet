@@ -48,6 +48,8 @@
         font-weight: 400;
         color: $color;
         right: 5px;
+        display: flex;
+        align-items: center;
         i{
             padding-left: 10px;
         }
