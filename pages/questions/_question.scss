@@ -56,9 +56,6 @@
                     left: -65px;
                     bottom: 0;
                 }
-                &:last-child{
-                    content: none;
-                }
                 h5{
                     color:#282938;
                     font-family: $primary-font;
@@ -69,6 +66,10 @@
                 }
                 p{
                     @include peragraph(#282938, 624px, 16px, 48px);
+                }
+                :last-child::after{
+                    width: 0;
+                    height: 0;
                 }
                }
                .question__right-icon{

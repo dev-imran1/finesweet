@@ -583,9 +583,6 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   left: -65px;
   bottom: 0;
 }
-#question .question__wrapper .question__right-wrapper .question__right .question__right-content:last-child {
-  content: none;
-}
 #question .question__wrapper .question__right-wrapper .question__right .question__right-content h5 {
   color: #282938;
   font-family: "Poppins", sans-serif;
@@ -604,6 +601,10 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
   opacity: 0.7;
   margin-top: 16px;
   margin-bottom: 48px;
+}
+#question .question__wrapper .question__right-wrapper .question__right .question__right-content :last-child::after {
+  width: 0;
+  height: 0;
 }
 #question .question__wrapper .question__right-wrapper .question__right .question__right-icon {
   padding-top: 35px;
@@ -898,8 +899,9 @@ nav .nav__wrapper .nav__btn .nav__btn-a:hover {
 #copywrite .copywrite__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#copywrite .copywrite__wrapper .copywrite__gmail h5 {
+#copywrite .copywrite__wrapper .copywrite__gmail p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
